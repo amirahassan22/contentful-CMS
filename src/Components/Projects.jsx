@@ -14,7 +14,7 @@ export default function Projects() {
     );
   }
   return (
-    <section className=" dark:bg-gray-900 antialiased mt-16 pt-7 pb-12">
+    <section className=" dark:bg-gray-900 antialiased mt-16 pt-7 pb-12 px-5">
       <div className="max-w-screen-xl px-4 mx-auto lg:px-6 ">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
@@ -22,13 +22,13 @@ export default function Projects() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {projects?.map((project, index) => {
             const { title, url, image } = project;
             return (
               <div
                 key={index}
-                className="project-card space-y-4 bg-white rounded-2xl overflow-hidden"
+                className="project-card space-y-4 bg-white rounded-2xl overflow-hidden hover:rotate-0 md:hover:rotate-3"
               >
                 <div className="w-full h-52 ">
                   <img
@@ -49,7 +49,7 @@ export default function Projects() {
                     <a
                       href="#"
                       title=""
-                      className="heroBtn text-white  justify-center  inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center hover:text-white dark:focus:ring-primary-800"
+                      className="heroBtn text-white  justify-center  inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center hover:text-white dark:focus:ring-primary-800 mt-3"
                       role="button"
                     >
                       Source Code
@@ -71,7 +71,7 @@ export default function Projects() {
                       href={url}
                       title=""
                       target="_blank"
-                      className="ms-4 text-white bg-primary-700 justify-center hover:bg-primary-800 hover:text-white inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                      className="ms-4 text-white bg-primary-700 justify-center hover:bg-primary-800 hover:text-white inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 mt-3"
                       role="button"
                     >
                       Preview
